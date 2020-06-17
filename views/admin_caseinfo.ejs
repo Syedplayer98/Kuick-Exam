@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <!--logo start-->
             <div class="brand">
                 <div class="mt-1 ml-3">
-                    <a href="adminhome.ejs">
+                    <a href="/adminhome">
                         <img src="img/logo1.png">
                     </a>
                 </div>
@@ -151,7 +151,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <td id="date<%=i%>">
                                             <%= cases[i].ScheduledDate %>
                                         </td>
-                                        <script >
+                                        <script>
                                             var s1 = document.getElementById('date<%=i%>');
                                             var d1 = new Date(s1.innerHTML);
                                             var weekday = new Array(7);
@@ -167,7 +167,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             var curr_month1 = d1.getMonth() + 1;
                                             var curr_year1 = d1.getFullYear();
                                             document.getElementById('date<%=i%>').textContent = curr_day1 + " " + curr_date1 + "-" + curr_month1 + "-" + curr_year1;
-                                          </script>
+                                        </script>
                                         <td><button class="btn btn-primary" onclick="window.location.href = '/<%= cases[i].id%>';">View</button></td>
                                     </tr>
                                     <% } %>
