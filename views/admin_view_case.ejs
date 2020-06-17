@@ -111,16 +111,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <!-- <div class="table-responsive container"> -->
                     <div class="container-fluid mt-5">
                         <div class=" mr-auto">
-                            <h3 class="cust-font" style="text-align: center;">Status: <%= clientCase.Status %></h3>
+                            <h3 class="cust-font" style="text-align: center;">Status:
+                                <%= clientCase.Status %>
+                            </h3>
                             <br>
                             <div class="profile" style="background-color: white;">
                                 <div class="border1">
                                     <h2 class="cust-font"><u>Client Information</u>:</h2>
                                     <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">Client 1: &ensp; </h4><%= clientCase.name1 %></div> <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">Client 2: &ensp; </h4><%= clientCase.name2 %></div> <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">DOB: &ensp; </h4><p id="dob2"><%= clientCase.DOB %></p></div> <br>
-                                    <script >
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Client 1: &ensp; </h4>
+                                        <%= clientCase.name1 %>
+                                    </div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Client 2: &ensp; </h4>
+                                        <%= clientCase.name2 %>
+                                    </div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">DOB: &ensp; </h4>
+                                        <p id="dob2">
+                                            <%= clientCase.DOB %>
+                                        </p>
+                                    </div> <br>
+                                    <script>
                                         var s2 = document.getElementById('dob2');
                                         var d2 = new Date(s2.innerHTML);
                                         var weekday2 = new Array(7);
@@ -137,12 +150,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         var curr_year2 = d2.getFullYear();
                                         document.getElementById('dob2').textContent = curr_day2 + " " + curr_date2 + "-" + curr_month2 + "-" + curr_year2;
                                     </script>
-                                    <div style="display: flex;"><h4 class="cust-font1">Policy Name: &ensp; </h4><%= clientCase.Policy %></div> <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">Policy amount: &ensp; </h4><%= clientCase.Amount %></div> <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">Address: &ensp; </h4><%= clientCase.Address %></div> <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">Phone#: &ensp; </h4><%= clientCase.PhoneNo %></div> <br>
-                                    <div style="display: flex;"><h4 class="cust-font1">Schedule Date: &ensp; </h4><p id="date2"><%= clientCase.ScheduledDate %></p></div><br>
-                                    <script >
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Policy Name: &ensp; </h4>
+                                        <%= clientCase.Policy %>
+                                    </div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Policy amount: &ensp; </h4>
+                                        <%= clientCase.Amount %>$</div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Address: &ensp; </h4>
+                                        <%= clientCase.Address %>
+                                    </div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Phone#: &ensp; </h4>
+                                        <%= clientCase.PhoneNo %>
+                                    </div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Schedule Date: &ensp; </h4>
+                                        <p id="date2">
+                                            <%= clientCase.ScheduledDate %>
+                                        </p>
+                                    </div><br>
+                                    <script>
                                         var s1 = document.getElementById('date2');
                                         var d1 = new Date(s1.innerHTML);
                                         var weekday = new Array(7);
@@ -159,15 +188,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         var curr_year1 = d1.getFullYear();
                                         document.getElementById('date2').textContent = curr_day1 + " " + curr_date1 + "-" + curr_month1 + "-" + curr_year1;
                                     </script>
-                                    <div style="display: flex;"><h4 class="cust-font1">Time: &ensp; </h4><%= clientCase.Time %></div> <br>
+                                    <div style="display: flex;">
+                                        <h4 class="cust-font1">Time: &ensp; </h4>
+                                        <%= clientCase.Time %>
+                                    </div> <br>
                                     <h4 class="cust-font1">Requirements:</h4>
                                     <div style="padding-left: 3%;">
                                         <ul>
-                                            <li>1. <%= clientCase.value1 %></li>
-                                            <li>2. <%= clientCase.value2 %></li>
-                                            <li>3. <%= clientCase.value3 %></li>
-                                            <li>4. <%= clientCase.value4 %></li>
-                                            <li>5. <%= clientCase.value5 %></li>
+                                            <li>1.
+                                                <%= clientCase.value1 %>
+                                            </li>
+                                            <li>2.
+                                                <%= clientCase.value2 %>
+                                            </li>
+                                            <li>3.
+                                                <%= clientCase.value3 %>
+                                            </li>
+                                            <li>4.
+                                                <%= clientCase.value4 %>
+                                            </li>
+                                            <li>5.
+                                                <%= clientCase.value5 %>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
