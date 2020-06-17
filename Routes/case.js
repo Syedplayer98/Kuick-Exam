@@ -51,9 +51,9 @@ app.get('/completedcases',verifyAdminToken,async (req,res)=>{
 
 app.post('/add',verifyAgentToken,async (req,res)=> {
 
-    const checkAddress = await Case.findOne({Address:req.body.Address});
-    const checkPhoneNo = await Case.findOne({PhoneNo:req.body.PhoneNo});
-    if(checkAddress  && checkPhoneNo ) return res.status(400).send("Case already filled");
+    // const checkAddress = await Case.findOne({Address:req.body.Address});
+    // const checkPhoneNo = await Case.findOne({PhoneNo:req.body.PhoneNo});
+    // if(checkAddress  && checkPhoneNo ) return res.status(400).send("Case already filled");
     
     const clientCase = new Case({
         agentID:req.session.agentId,
