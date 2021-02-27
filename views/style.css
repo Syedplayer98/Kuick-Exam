@@ -301,7 +301,7 @@ body {
     width: 35%;
     height: 67%;
     content: "";
-    background-image: url(img/banner_img.png);
+    /* background-image: url(img/banner_img.png); */
     background-size: 100% 100%;
     right: 9%;
 }
